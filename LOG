@@ -914,4 +914,17 @@ done.
 Branch master set up to track remote branch master from origin.
 Everything up-to-date
 
+====
+[Calm-2 sdss_project] vi LOG
+[Calm-2 sdss_project] git commit LOG
+[master f7d5013] Created remote repository.
+ 1 file changed, 26 insertions(+)
+[Calm-2 sdss_project] git push 
+Counting objects: 5, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 758 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To ssh://wmwv@ra.phyast.pitt.edu/home/bruno/users/wmwv/repository/sdss_project.git
+   b49fa0a..f7d5013  master -> master
 
