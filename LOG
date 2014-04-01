@@ -889,3 +889,29 @@ COMMIT_EDITMSG  config      index       objects/
 HEAD        description info/       refs/
 branches/   hooks/      logs/
 
+====
+[Calm-2 sdss_project] vi LOG
+[Calm-2 sdss_project] git add LOG
+[Calm-2 sdss_project] git commit LOG
+[master b49fa0a] LOG of terminals from demo in class
+ 1 file changed, 891 insertions(+)
+ create mode 100644 LOG
+[Calm-2 ~] git clone --bare sdss_project sdss_project.git
+Cloning into bare repository 'sdss_project.git'...
+done.
+[Calm-2 ~] rsync sdss_project.git wmwv@ra.phyast.pitt.edu:~/repository/
+[Calm-2 sdss_project] git remote add origin ssh://wmwv@ra.phyast.pitt.edu/home/bruno/users/wmwv/repository/sdss_project.git
+[Calm-2 sdss_project] git remote show origin
+* remote origin
+  Fetch URL: ssh://wmwv@ra.phyast.pitt.edu/home/bruno/users/wmwv/repository/sdss_project.git
+  Push  URL: ssh://wmwv@ra.phyast.pitt.edu/home/bruno/users/wmwv/repository/sdss_project.git
+  HEAD branch: master
+  Remote branch:
+    master new (next fetch will store in remotes/origin)
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+[Calm-2 sdss_project] git push -u
+Branch master set up to track remote branch master from origin.
+Everything up-to-date
+
+
