@@ -823,7 +823,11 @@ no changes added to commit
 [Calm-2 sdss_project] git status
 On branch master
 nothing to commit, working directory clean
-====
+
+#######################################################################
+#### Using .gitignore to ignore files that we don't want to keep
+####   in the repository.
+#######################################################################
 [Calm-2 ~] cd ~/sdss_project/
 [Calm-2 sdss_project] ls
 result.fits         simple_results.pyc
@@ -889,7 +893,9 @@ COMMIT_EDITMSG  config      index       objects/
 HEAD        description info/       refs/
 branches/   hooks/      logs/
 
-====
+#######################################################################
+#### Adding in the full LOG file from the 2014-03-31 class session ####
+#######################################################################
 [Calm-2 sdss_project] vi LOG
 [Calm-2 sdss_project] git add LOG
 [Calm-2 sdss_project] git commit LOG
@@ -914,7 +920,9 @@ done.
 Branch master set up to track remote branch master from origin.
 Everything up-to-date
 
-====
+#######################################################################
+#### Adding the LOG adding commands to the LOG file
+#######################################################################
 [Calm-2 sdss_project] vi LOG
 [Calm-2 sdss_project] git commit LOG
 [master f7d5013] Created remote repository.
@@ -927,4 +935,52 @@ Writing objects: 100% (3/3), 758 bytes | 0 bytes/s, done.
 Total 3 (delta 2), reused 0 (delta 0)
 To ssh://wmwv@ra.phyast.pitt.edu/home/bruno/users/wmwv/repository/sdss_project.git
    b49fa0a..f7d5013  master -> master
+
+#######################################################################
+#### Creating a repo copy on GitHub ####
+#### Note that we are now setting up two remote repositories ####
+#### 'origin': is on the Astro machines
+#### 'github': is on github
+#### The authoritative master is set by convention 
+####   and human management not by technial fiat.
+#######################################################################
+[serenity tmp] git clone ssh://wmwv@ra.phyast.pitt.edu/home/bruno/users/wmwv/repository/sdss_project.git
+Cloning into 'sdss_project'...
+remote: Counting objects: 23, done.
+remote: Compressing objects: 100% (22/22), done.
+remote: Total 23 (delta 9), reused 0 (delta 0)
+Receiving objects: 100% (23/23), 70.39 KiB | 0 bytes/s, done.
+Resolving deltas: 100% (9/9), done.
+Checking connectivity... done.
+[serenity tmp] cd sdss_project/
+[serenity sdss_project] git remote show origin
+* remote origin
+  Fetch URL: ssh://wmwv@ra.phyast.pitt.edu/home/bruno/users/wmwv/repository/sdss_project.git
+  Push  URL: ssh://wmwv@ra.phyast.pitt.edu/home/bruno/users/wmwv/repository/sdss_project.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+[serenity sdss_project] git remote add github https://github.com/wmwv/sdss_project.git
+[serenity sdss_project] git push -u github master
+Username for 'https://github.com': wmwv
+Password for 'https://wmwv@github.com': 
+Counting objects: 23, done.
+Delta compression using up to 16 threads.
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (23/23), 70.39 KiB | 0 bytes/s, done.
+Total 23 (delta 9), reused 23 (delta 9)
+To https://github.com/wmwv/sdss_project.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from github.
+
+#### So now we have to learn what the implict defaults we've add before
+[serenity sdss_project] git remote -v
+github  https://github.com/wmwv/sdss_project.git (fetch)
+github  https://github.com/wmwv/sdss_project.git (push)
+origin  ssh://wmwv@ra.phyast.pitt.edu/home/bruno/users/wmwv/repository/sdss_project.git (fetch)
+origin  ssh://wmwv@ra.phyast.pitt.edu/home/bruno/users/wmwv/repository/sdss_project.git (push)
 
