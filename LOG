@@ -977,10 +977,40 @@ To https://github.com/wmwv/sdss_project.git
  * [new branch]      master -> master
 Branch master set up to track remote branch master from github.
 
-#### So now we have to learn what the implict defaults we've add before
+#### So now we have to learn what the implict defaults we've had before
+#### Our local 'master' now tracks github 'master'
+####   because that's exactly what '-u' option to 'push' does.
 [serenity sdss_project] git remote -v
 github  https://github.com/wmwv/sdss_project.git (fetch)
 github  https://github.com/wmwv/sdss_project.git (push)
 origin  ssh://wmwv@ra.phyast.pitt.edu/home/bruno/users/wmwv/repository/sdss_project.git (fetch)
 origin  ssh://wmwv@ra.phyast.pitt.edu/home/bruno/users/wmwv/repository/sdss_project.git (push)
 
+[serenity sdss_project] vi LOG
+[serenity sdss_project] git add LOG
+[serenity sdss_project] git commit
+[master 42dccd7] Adds notes on setting up a github remote.
+ 1 file changed, 59 insertions(+), 3 deletions(-)
+[serenity sdss_project] git push
+Counting objects: 5, done.
+Delta compression using up to 16 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.15 KiB | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To https://github.com/wmwv/sdss_project.git
+   c3e6d1c..42dccd7  master -> master
+
+#### So we can both push to our Astro remote 
+####  and update that to be the tracking branch with
+[serenity sdss_project] git push origin master
+Counting objects: 5, done.
+Delta compression using up to 16 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.15 KiB | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To ssh://wmwv@ra.phyast.pitt.edu/home/bruno/users/wmwv/repository/sdss_project.git
+   c3e6d1c..42dccd7  master -> master
+#### Recall that the syntax is git push <remote> <local>
+#### While that might not make sense exactly it's because 
+####   we want to keep the general remote local ordering in all git commands
+####   and "git fetch remote" makes a lot of sense.
