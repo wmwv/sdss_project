@@ -1,0 +1,58 @@
+2014-03-31 MWV Guest Lecture -- Annotated Bibliography
+
+* Git
+ http://git-scm.com/book/en/Git-Basics
+
+* SQL
+ Lots of things out there.  The following is one: http://sqlzoo.net/
+ - I have a book I like if anyone really wants to get serious
+ - But really learning it in context of accessing real data sets is probably the best place to start:
+
+SDSS Sky Server
+ http://skyserver.sdss3.org/public/en/home.aspx
+
+SDSS SQL Introductory Query
+ http://skyserver.sdss3.org/public/en/tools/search/sql.aspx
+ - You can retrieve information as HTML, XML, CSV, JSON, VOTable, or binary FITS table.  
+ - We showed pages of HTML retrieval, but then downloaded a binary FITS table for our future use. 
+
+SDSS SQL Example Queries Covering a number of use cases:
+ http://skyserver.sdss3.org/public/en/help/docs/realquery.aspx
+
+SDSS SQL Schema
+ http://skyserver.sdss3.org/public/en/help/browser/browser.aspx
+
+SDSS CasJobs
+ http://skyserver.sdss3.org/CasJobs/
+  - If you ever need to get really serious for queries that return more rows, take more time to run, or if you want some space to upload and download tables more at your leisure, you want SDSS CasJobs
+
+* Regular Expressions (regex).  
+ http://www.bohyunkim.net/blog/archives/2595
+  -- A somewhat random choice, but a pretty helpful post.
+
+* How to Efficiently and Powerfully Search-and-Replace in Emacs and vi:
+ --  Emacs regular expressions and searching:
+   http://ergoemacs.org/emacs/emacs_regex.html
+   http://ergoemacs.org/emacs/emacs_find_replace.html
+   http://www.gnu.org/software/emacs/manual/html_node/emacs/Search.html#Search
+   http://www.cs.utah.edu/dept/old/texinfo/emacs18/emacs_17.html
+
+ -- vi: I switched to vi as a postdoc.  I assume you never will.
+  vi: Intro including Regex
+   http://cmd.inp.nsk.su/old/cmd2/manuals/unix/UNIX_Unleashed/ch03.htm
+ A brief tutorial on vi for those who are interested in the dark path
+   http://blog.interlinked.org/tutorials/vim_tutorial.html
+ The command 'vimtutor' will walk you through a helpful introduction.
+  - 'vim' is the most commonly installed, but everyone still calls it vi
+     (both in speech and at the command line).
+
+ -- Nano:
+   I think most people who would using regex are emacs or vi users.
+   I don't use nano myself, and I couldn't quickly find a reference
+   But if you do, there is certainly a regex reference to help.
+
+* Laziness
+  - I am lazy.  I go to great lengths to avoid spending X hours doing manual repetitive work that a computer should be able to do for me and instead am much happier spending Y hours learning how to get a computer to do it for me.  My goal is that Y < 3X.
+ http://threevirtues.com/
+ http://blog.teamtreehouse.com/the-programmers-virtues
+
