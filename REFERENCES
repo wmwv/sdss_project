@@ -56,3 +56,29 @@ SDSS CasJobs
  http://threevirtues.com/
  http://blog.teamtreehouse.com/the-programmers-virtues
 
+* Plotting
+ - Basic plotting
+http://python4astronomers.github.io/plotting/matplotlib.html
+ - Plotting for Paper figures 
+http://python4astronomers.github.io/plotting/publication.html#publication-quality-plots
+
+# For Python there's also the matplotlib example gallery
+http://matplotlib.org/gallery.html
+# For a nice collection of examples in IDL and Python, see 
+http://astroplotlib.stsci.edu/
+
+* Histograms
+ - How do we choose the binning for histograms in general?
+ - For some useful disussion, see
+http://www.astroml.org/user_guide/density_estimation.html#bayesian-blocks-histograms-the-right-way
+
+* Fitting
+ - Curve Fitting in SciPy (as a Python notebook)
+http://nbviewer.ipython.org/url/media.usm.maine.edu/~pauln/ScipyScriptRepo/CurveFitting.ipynb
+ - Least Squares fitting in SciPy
+ http://wiki.scipy.org/Cookbook/FittingData
+ - For a very relevant example of fitting d_L, see
+http://www.astroml.org/book_figures/chapter8/fig_nonlinear_mu_z.html
+  -- If you don't have astroML, then you can adapt the astropy.Cosmology module
+http://astropy.readthedocs.org/en/latest/cosmology/
+
